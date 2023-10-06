@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+
+import Home from "./components/home/Home";
+import Contact from "./components/contact/Contact";
+import Menu from "./components/menu/Menu";
+import About from "./components/about/About";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Menu" element={<Menu />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
 
 export default App;
+
+// ghorme sabzi
+// gheyme
+// tas kabab
+// bare kabab
+// koobide kabab
+// cholo kabab
+// abgoosht
+// sabzi polo ba mahi
+// dizi
+// persian meatball
+// dolme
+// persian olovie salad
+// koko sabzi

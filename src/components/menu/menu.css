@@ -1,0 +1,42 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+.menu img {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.menu .food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: rgb(253, 240, 183);
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 3px 8px;
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  margin: 20px 0px 20px 40px;
+}
+.food img {
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.food .title {
+  margin-bottom: 20px;
+  color: black;
+}
+.food .price {
+  margin-bottom: 20px;
+}
+.price {
+  color: rgb(107, 107, 107);
+}
+.price strong {
+  color: rgb(82, 36, 36);
+  font-size: larger;
+}
