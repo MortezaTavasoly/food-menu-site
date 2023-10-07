@@ -5,12 +5,12 @@ import logo from "../../assets/logo.jpg";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState("block");
+  const [showMenu, setShowMenu] = useState(false);
   const handleLinks = () => {
-    if (showMenu === "block") {
-      setShowMenu("none");
+    if (showMenu === true) {
+      setShowMenu(false);
     } else {
-      setShowMenu("block");
+      setShowMenu(true);
     }
   };
   return (
@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="logo">
         <img src={logo} alt="logo-image" />
       </div>
-      <div className="links" style={{ display: showMenu }}>
+      <div className={!showMenu ? "links" : "links show"}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="Menu">Menu</NavLink>
         <NavLink to="About">About Us</NavLink>

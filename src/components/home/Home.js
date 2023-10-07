@@ -10,9 +10,9 @@ export default function Home() {
           Welcome to <br /> Mr.CHEF <br /> Restaurant
         </h1>
         <p>Enjoy persian food with highest quality!</p>
-        <button>
-          <Link to="/Menu">Order Now</Link>
-        </button>
+        <Link to="/Menu">
+          <button>Order Now</button>
+        </Link>
       </div>
     </div>
   );

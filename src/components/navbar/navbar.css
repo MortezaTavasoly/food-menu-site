@@ -37,6 +37,9 @@
   .links {
     display: none;
   }
+  .links.show {
+    display: block;
+  }
   .links-menu {
     display: block;
   }

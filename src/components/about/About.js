@@ -1,9 +1,9 @@
-import React from "react";
+import AboutUsImg from "../../assets/about-us.jpg";
 import "./about.css";
 export default function About() {
   return (
     <div className="about">
-      <div className="about-image"></div>
+      <img src={AboutUsImg} className="about-image" />
       <div className="about-text">
         <h1 className="about-title">About Us</h1>
         <p className="about-info">
